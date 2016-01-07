@@ -1,0 +1,28 @@
+
+		table, td {
+			
+		}
+
+		body {
+			<!-- line-height: 1.5; -->
+			<!-- 	background-size: cover;
+			background-size: 100% auto; -->
+
+		}
+		.cover-container{
+			width: 520px;
+			margin-top: 50px;
+			margin-bottom: 100px;
+
+			background: rgba(0,0,0,0.5);
+		}
+		.divider-vertical {
+			height: 50px;
+			margin: 0 9px;
+			border-left: 1px solid gray;
+			border-right: 1px solid gray;
+		}
+		.rightbar{
+			margin-top: 7px;
+			margin-right: 20px;
+		}
