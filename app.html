@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Durak Node Page</title>
+	<title>Theater</title>
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/cover.css" rel="stylesheet">
@@ -73,9 +73,9 @@
 					<br>
 
 					<div class="inner cover">
-						{{fandango}}
+
 						<br><br>
-						<h1 style="font-size:50px" class="cover-heading"><b>Node: {{nodeInfo.Name}}</b></h1>
+						<h1 style="font-size:50px" class="cover-heading"><b>{{fandango}}</b></h1>
 
 						  <!-- <li ng-repeat="x in names">
 						    {{ x.Name + ', ' + x.Country }}
@@ -86,7 +86,7 @@
 
 							<tr>
 								<td>City Name</td>
-								<td>{{nodeInfo.GeographyCityName}}</td>
+								<td>{{nodeInfo.GeographyCityName}}{{params.id}}</td>
 							</tr>
 							<tr>
 								<td>ID</td>

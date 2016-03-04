@@ -2,69 +2,53 @@ var app = angular.module("app", []);
 
 app.config(function ($routeProvider) {
   $routeProvider
-    .when('/page/:id',
-    {
-      templateUrl: "app.html",
-      controller: "AppCtrl"
-    });
+  .when('/page/:id',
+  {
+    templateUrl: "app.html",
+    controller: "AppCtrl"
+  });
 });
 
-app.controller("AppCtrl", function ($scope,$routeParams, $http) {
+app.controller("AppCtrl", function ($scope, $routeParams){//, $http) {
 
-  $scope.model = {
-    message: $routeParams.id
-  };
+  $.support.cors = true;
 
+  $.ajax({
+    crossDomain: true,
+    url: "http://www.fandango.com/rss/moviesnearme_10013.rss",
+    type: "POST",
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    },
+    dataType: "xml",
+    //data: soapMessage,
+    success: function (data) {
+      $scope.fandango = data;
+    }
+  });
+  // $scope.params = $routeParams;
+  // $.support.cors = true;
+  // $.ajax({
+  //   url: 'http://www.fandango.com/rss/moviesnearme_10013.rss',
+  //   dataType: 'JSONP',
+  //   jsonpCallback: 'callback',
+  //   type: 'GET',
+  //   success: function (data) {
+  //     $scope.fandango = data;
+  //   }
+  // });
 
-var createCORSRequest = function(method, url) {
-  var xhr = new XMLHttpRequest();
-  if ("withCredentials" in xhr) {
-    // Most browsers.
-    xhr.open(method, url, true);
-  } else if (typeof XDomainRequest != "undefined") {
-    // IE8 & IE9
-    xhr = new XDomainRequest();
-    xhr.open(method, url);
-  } else {
-    // CORS not supported.
-    xhr = null;
-  }
-  return xhr;
-};
+  // var script = document.createElement('script');
+  // script.type = 'text/javascript';
+  // script.src = 'http://www.fandango.com/rss/moviesnearme_10013?callback=my_callback';
+  // document.body.appendChild(script);
+  //
+  // mycallback = function(data){
+  //   alert("test");
+  // };
 
-var url = 'http://www.fandango.com/rss/moviesnearme_11790/';
-var method = 'GET';
-var xhr = createCORSRequest(method, url);
+  var movies = {};
+  var theaters = {};
 
-xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-xhr.send();
-
-
-
-
-   var movies = {};
-   var theaters = {};
-   var link = "http://www.fandango.com/rss/moviesnearme_"+ 10013 + ".rss";
-   $http.get(link)
-   .then(function(response) {$scope.fandango = response.data;});
-
-
-        // $http({
-        //     method  : 'GET',
-        //     url     : 'http://www.fandango.com/rss/moviesnearme_10013/',
-            
-        //     timeout : 10000,
-        //     params  : {},  // Query Parameters (GET)
-        //     transformResponse : function(data) {
-        //         // string -> XML document object
-        //         return $.parseXML(data);
-        //     }
-        // }).success(function(data, status, headers, config) {
-        //     console.dir(data);  // XML document object
-        //     $scope.xml = data.documentElement.innerHTML;
-        // }).error(function(data, status, headers, config) {
-            
-        // });
 
 });
-
