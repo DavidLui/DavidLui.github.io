@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>401k Calculator</title>
+    <link rel="stylesheet" href="../css/foundation.min.css">
+  </head>
+  <body>
+    
+    <div class='container'>
+        Limit Per Year:<br>
+        <input type="text" id="limit" name="Limit Per Year" value="17,500">
+        <br>
+        YTD Contributions:<br>
+        <input type="text" id="ytd" name="YTD Contributions" value="0">
+        Current Month:<br>
+        <input type="text" id="date" name="Date" value="0">
+        <br><br>
+        <button value="Submit" onclick="calculate()">
+        <br>
+        <p id="line">You have to put this much per paycheck (biweekly): </p>
+    </div>
+
+    
+    
+  </body>
+  <script>
+    function calculate() {
+      var ytd = document.getElementById("ytd").innerHTML;
+      var limit = document.getElementById("limit").innerHTML;
+      var date = document.getElementById("date").innerHTML;
+      
+      document.getElementById("line").innerHTML = "You have to put this much per paycheck (biweekly): " + date;
+      
+    }
+  
+  </script>
+<html>
