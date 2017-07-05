@@ -31,10 +31,10 @@
   </body>
   <script>
     function calculate() {
-      var ytd = document.getElementById("ytd").value;
-      var limit = document.getElementById("limit").value;
-      var date = document.getElementById("date").value;
-      var gross = document.getElementById("gross").value;
+      var ytd = parseInt(document.getElementById("ytd").value);
+      var limit = parseInt(document.getElementById("limit").value);
+      var date = parseInt(document.getElementById("date").value);
+      var gross = parseInt(document.getElementById("gross").value);
       
       var paymentsRemaining = (12 - date) * 2;
       var paymentPerBiweekly = (limit - ytd) / paymentsRemaining;
