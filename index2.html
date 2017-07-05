@@ -23,7 +23,7 @@
         <button value="Submit" onclick="calculate()">Submit</button>
         <br>
         <p id="line">You have to put this much per paycheck (biweekly): </p>
-        <p id="line2">This is _% of your gross income.</p>
+        <p id="line2">This is _% of your weekly paycheck.</p>
     </div>
 
     
@@ -41,7 +41,7 @@
       var percentage = (paymentPerBiweekly*24) / gross;
       
       document.getElementById("line").innerHTML = "You have to put this much per paycheck (biweekly): " + paymentPerBiweekly;
-      document.getElementById("line2").innerHTML = "This is " + percentage + "% of your gross income.";
+      document.getElementById("line2").innerHTML = "This is " + percentage + "% of your weekly paycheck.";
       
     }
   
