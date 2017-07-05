@@ -40,7 +40,7 @@
       var paymentPerBiweekly = (limit - ytd) / paymentsRemaining;
       var percentage = (paymentPerBiweekly*24) / gross;
       
-      document.getElementById("line").innerHTML = "You have to put this much per paycheck (biweekly): " + paymentPerBiweekly;
+      document.getElementById("line").innerHTML = "You have to put this much per paycheck (biweekly): $" + paymentPerBiweekly;
       document.getElementById("line2").innerHTML = "This is " + percentage + "% of your weekly paycheck.";
       
     }
