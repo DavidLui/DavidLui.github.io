@@ -43,7 +43,7 @@
       var date = parseInt(document.getElementById("date").value);
       var gross = parseInt(document.getElementById("gross").value);
       
-      var paymentsRemaining = (12 - date) * 2;
+      var paymentsRemaining = (24 - (date*2));
       var paymentPerBiweekly = (limit - ytd) / paymentsRemaining;
       var percentage = (paymentPerBiweekly*24*100) / gross;
       
