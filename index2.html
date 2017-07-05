@@ -9,6 +9,8 @@
     
     <div class='container'>
         Limit Per Year:<br>
+        <input type="text" id="gross" name="Gross Income" value="0">
+        <br>
         <input type="text" id="limit" name="Limit Per Year" value="17,500">
         <br>
         YTD Contributions:<br>
@@ -20,6 +22,7 @@
         <button value="Submit" onclick="calculate()">Submit</button>
         <br>
         <p id="line">You have to put this much per paycheck (biweekly): </p>
+        <p id="line2">This is _% of your gross income.</p>
     </div>
 
     
@@ -27,11 +30,17 @@
   </body>
   <script>
     function calculate() {
-      var ytd = document.getElementById("ytd").innerHTML;
-      var limit = document.getElementById("limit").innerHTML;
-      var date = document.getElementById("date").innerHTML;
+      var ytd = document.getElementById("ytd").value;
+      var limit = document.getElementById("limit").value;
+      var date = document.getElementById("date").value;
+      var gross = document.getElementById("gross").value;
       
-      document.getElementById("line").innerHTML = "You have to put this much per paycheck (biweekly): " + date;
+      var paymentsRemaining = (12 - date) * 2;
+      var paymentPerBiweekly = (limit - ytd) / paymentsRemaining;
+      var percentage = (paymentPerBiweekly*24) / gross;
+      
+      document.getElementById("line").innerHTML = "You have to put this much per paycheck (biweekly): " + paymentPerBiweekly;
+      document.getElementById("line2").innerHTML = "This is " + percentage + "% of your gross income.";
       
     }
   
