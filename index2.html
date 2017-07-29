@@ -43,9 +43,9 @@
       var date = parseInt(document.getElementById("date").value);
       var gross = parseInt(document.getElementById("gross").value);
       
-      var paymentsRemaining = (24 - (date*2));
+      var paymentsRemaining = (26 - (date*2));
       var paymentPerBiweekly = (limit - ytd) / paymentsRemaining;
-      var percentage = (paymentPerBiweekly*24*100) / gross;
+      var percentage = (paymentPerBiweekly*26*100) / gross;
       
       document.getElementById("line0").innerHTML = "Paychecks remaining: " + paymentsRemaining;
       document.getElementById("line").innerHTML = "You have to put this much per paycheck (biweekly): $" + paymentPerBiweekly.toFixed(2);
