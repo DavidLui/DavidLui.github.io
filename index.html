@@ -19,7 +19,7 @@ var WindowEvent;(function(n){n[n.Load="load"]="Load";n[n.BeforeUnload="beforeunl
   var add = function () {
  RProfiler.addInfo('conversion',150,0);
 }
-  window.on("GlimpseLoaded", add());
+  $(window).on("GlimpseLoaded", add());
 
 </script>
     
