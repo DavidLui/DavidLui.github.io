@@ -16,10 +16,11 @@ var WindowEvent;(function(n){n[n.Load="load"]="Load";n[n.BeforeUnload="beforeunl
 
     
 <script type='text/javascript'>
-  window.on("GlimpseLoaded", addCustomMetrics);
-function (addCustomMetrics) {
+  var add = function () {
  RProfiler.addInfo('conversion',150,0);
 }
+  window.on("GlimpseLoaded", add());
+
 </script>
     
   </head>
