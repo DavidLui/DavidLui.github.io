@@ -9,10 +9,10 @@ var WindowEvent;(function(n){n[n.Load="load"]="Load";n[n.BeforeUnload="beforeunl
 
     
 <script type='text/javascript'>
-window.on("GlimpseLoaded", addCustomMetrics);
-function (addCustomMetrics) {
-  RProfiler.addInfo('conversion',141.95,0);
+var addCustomMetrics = function() {
+  RProfiler.addInfo("pageGroup", "foo");
 }
+window.on("GlimpseLoaded", addCustomMetrics());
 </script>
     
   </head>
