@@ -60,6 +60,14 @@
       var url = (/(http.*?)"\B/).exec(str)[1];
       var headers = str.match(/-H ".*?"\B/g);
       //form or type
-      
+      var xmlRequestStringBegin = "var xhttp = new XMLHttpRequest();xhttp.open("GET", +" url + ", true);"
+      var xmlRequestStringEnd = "xhttp.send();"
+      for (var i = 0; i < headers.length; i++) {
+            var h1 = /-H\s\"(.*?)\:\s(.*?)\"$/.exec(headers[1])[1];
+            var h2 = /-H\s\"(.*?)\:\s(.*?)\"$/.exec(headers[1])[2];
+            var head = "xhttp.setRequestHeader(" + h1 + "," + h2 + ");";
+            xmlRequestStringBegin += head;
+      }
+      var finalString = xmlRequestStringBegin + xmlRequestStringEnd;
 </script>
 </html>
