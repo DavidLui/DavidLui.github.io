@@ -24,6 +24,13 @@ function myFunction() {
     document.getElementById("demo").innerHTML = txt;
 }
 </script>
+<script> 
+    chrome.storage.local.get("supreme", function(data) {
+	console.log(data);
+  console.log("test!");
+});
 
+    
+</script>
 </body>
 </html>
