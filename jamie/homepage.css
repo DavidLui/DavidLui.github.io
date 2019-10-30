@@ -1,5 +1,5 @@
-#carousel {
-	/*max-height: 100vh;*/
+.carousel {
+	padding-top: 70px;
 }
 
 #welcome {
@@ -34,11 +34,25 @@
 	font-size: 25px;
 }
 
+.navbar {
+	background: floralwhite;
+}
+
 .navbar-brand {
 	font-size: 30px;
     font-weight: bolder;
 }
 
 footer {
-	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 70px;
+	border-top: 1px solid grey;
+}
+
+footer .container {
+	padding-top: 50px;
+}
+
+.section_welcome__main {
+	padding-top: 70px;
 }
