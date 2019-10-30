@@ -1,0 +1,12 @@
+#carousel {
+	/*max-height: 100vh;*/
+}
+
+#welcome {
+	margin-top: 60px;
+
+}
+
+.carousel-item {
+	max-height: 80vh;
+}
