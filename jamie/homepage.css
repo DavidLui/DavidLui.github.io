@@ -2,13 +2,8 @@
 	padding-top: 70px;
 }
 
-#welcome {
-	margin-top: 60px;
-
-}
-
 #head .carousel-item {
-	max-height: 80vh;
+	max-height: 70vh;
 }
 
 .grid-container {
@@ -50,9 +45,45 @@ footer {
 }
 
 footer .container {
-	padding-top: 50px;
+	padding-top: 40px;
 }
 
 .section_welcome__main {
-	padding-top: 70px;
+	padding-top: 110px;
+}
+
+.section_home__main {
+	padding-top: 60px;
+}
+
+body {
+  font-family: Arial;
+}
+
+.split {
+  height: 100vh;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+  object-fit: cover;
+}
+
+.right {
+  right: 0;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
