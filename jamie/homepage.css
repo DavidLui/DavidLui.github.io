@@ -3,7 +3,12 @@
 }
 
 #head .carousel-item {
-	max-height: 70vh;
+	max-height: 90vh;
+}
+
+#head .carousel-item img {
+    object-fit: cover;
+    height: 90vh;
 }
 
 .grid-container {
@@ -26,7 +31,9 @@
 }
 
 #navbarNavAltMarkup {
-	font-size: 25px;
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
 }
 
 .navbar {
