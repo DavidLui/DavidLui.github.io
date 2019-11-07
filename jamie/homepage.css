@@ -11,6 +11,15 @@
     height: 90vh;
 }
 
+#firstC {
+	height: 133vh !important;
+}
+
+.carousel-text {
+	float: right;
+	color: black;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -33,7 +42,7 @@
 
 #navbarNavAltMarkup {
 	font-size: 18px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Nunito', 'Raleway', sans-serif;
     text-transform: uppercase;
 }
 
@@ -49,11 +58,14 @@
 footer {
 	padding-bottom: 20px;
 	margin-top: 70px;
-	border-top: 1px solid grey;
+	border-top: 5px solid #007bff54;
+	font-family: 'Nunito', 'Raleway', sans-serif;
 }
 
-footer .container {
+footer .footcontainer {
 	padding-top: 40px;
+	text-align: center;
+	color: #007bffd9;
 }
 
 .section_welcome__main {
