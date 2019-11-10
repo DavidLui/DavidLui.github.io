@@ -27,7 +27,7 @@
   padding: 50px;
   justify-content: center;
   overflow: hidden;
-  height: 935px;
+  height: 100%;
 }
 
 .grid-container img {
@@ -135,12 +135,12 @@ figure img {
 figure figcaption {
 	padding: 2em;
 	color: #fff;
-	text-transform: uppercase;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
     position: absolute;
     top: 0;
+    width: 100%;
 }
 
 figure figcaption::before,
@@ -167,6 +167,11 @@ figure p {
 	font-size: 68.5%;
 }
 
+figure p:first-of-type {
+	border-top: 2px solid white;
+	padding-top: 25px !important;
+}
+
 figure.effect-sarah img {
 	max-width: none;
 	width: -webkit-calc(100% + 20px);
@@ -188,7 +193,7 @@ figure.effect-sarah:hover img {
 }
 
 figure.effect-sarah figcaption {
-	text-align: left;
+	text-align: center;
 }
 
 figure.effect-sarah h2 {
@@ -218,7 +223,7 @@ figure.effect-sarah:hover h2::after {
 }
 
 figure.effect-sarah p {
-	padding: 1em 0;
+	padding: 4px 0;
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
@@ -238,4 +243,6 @@ figure.effect-sarah {
 	opacity: 1;
     background-color: black;
     width: 100%;
+    margin-bottom: 0px;
+    font-family: 'Nunito', 'Raleway', sans-serif;
 }
