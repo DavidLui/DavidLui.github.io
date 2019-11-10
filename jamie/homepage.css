@@ -69,6 +69,11 @@ footer {
 	font-family: 'Nunito', 'Raleway', sans-serif;
 }
 
+footer.contactFooter {
+	margin-top: 0px !important;
+	border-top: none;
+}
+
 footer .footcontainer {
 	padding-top: 40px;
 	text-align: center;
@@ -84,7 +89,7 @@ footer .footcontainer {
 }
 
 body {
-  font-family: Arial;
+	font-family: 'Nunito', 'Raleway', sans-serif;
 }
 
 .split {
@@ -120,7 +125,6 @@ figure {
 	float: left;
 	overflow: hidden;
 	margin: 10px 1%;
-	text-align: center;
     height: 700px;
 }
 
@@ -192,10 +196,6 @@ figure.effect-sarah:hover img {
 	transform: translate3d(0,0,0);
 }
 
-figure.effect-sarah figcaption {
-	text-align: center;
-}
-
 figure.effect-sarah h2 {
 	position: relative;
 	overflow: hidden;
@@ -236,6 +236,7 @@ figure.effect-sarah:hover p {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+	text-align: center;
 }
 
 figure.effect-sarah {
@@ -245,4 +246,10 @@ figure.effect-sarah {
     width: 100%;
     margin-bottom: 0px;
     font-family: 'Nunito', 'Raleway', sans-serif;
+}
+
+iframe {
+	width: 99.1vw;
+	height: 2400px;
+	border: none;
 }
