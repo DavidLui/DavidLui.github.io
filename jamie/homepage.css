@@ -1,3 +1,11 @@
+.logo_header {
+	background: #7993b2;
+	text-align: center
+}
+
+.logo_header img {
+	height: 265px;}
+
 .carousel {
 	padding-top: 70px;
 }
@@ -51,10 +59,16 @@
 	font-size: 18px;
 	font-family: 'Nunito', 'Raleway', sans-serif;
     text-transform: uppercase;
+    width: 100%;
+    justify-content: center;
 }
 
 .navbar {
-	background: floralwhite;
+	background: #7993b2;
+}
+
+.navbar a {
+	color: #dce2e2 !important;
 }
 
 .navbar-brand {
@@ -186,9 +200,7 @@ figure.effect-sarah img {
 	transform: translate3d(-10px,0,0);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-    height: 100%;
 }
-
 
 figure.effect-sarah:hover img {
 	opacity: 0.5;
@@ -201,6 +213,12 @@ figure.effect-sarah h2 {
 	overflow: hidden;
 	padding: 0.5em 0;
 	font-size: 50px;
+	visibility: hidden;
+}
+
+
+figure.effect-sarah:hover h2 {
+	visibility: visible;
 }
 
 figure.effect-sarah h2::after {
@@ -229,7 +247,7 @@ figure.effect-sarah p {
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: translate3d(100%,0,0);
 	transform: translate3d(100%,0,0);
-	font-size: 26px;
+	font-size: 22px;
 }
 
 figure.effect-sarah:hover p {
@@ -240,7 +258,6 @@ figure.effect-sarah:hover p {
 }
 
 figure.effect-sarah {
-	height: 100%;
 	opacity: 1;
     background-color: black;
     width: 100%;
