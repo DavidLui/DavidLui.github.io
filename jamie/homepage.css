@@ -4,7 +4,9 @@
 }
 
 .logo_header img {
-	height: 265px;}
+	height: 265px;
+	max-width: 100%;
+}
 
 .carousel {
 	padding-top: 70px;
