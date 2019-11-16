@@ -119,7 +119,7 @@
         <!-- <script src="./js/jquery-3.4.1.min.js"></script> -->
 
         <script type="text/javascript">
-            const intro = './imgs';
+            const path = './imgs';
             // const urlList = [
             // 	'1FrgDA-MndXcS-WUn8xIjk8DPW-xUsYUE',
             // 	'1FvCOV_2gevP81f5YTkvD93OIquD8fi9z',
@@ -150,7 +150,8 @@
             const modal = $('.modal-imgs');
 
             for (var i = 1; i < 41; i++) {
-                url = `${intro}/${i}.jpg`;
+                url = `${path}/${i}.jpg`;
+                thumb = `${path}/thumbnails/${i}_tn.jpg`;
                 // var column = document.createElement("div");
                 // column.className = 'column';
 
@@ -168,7 +169,7 @@
                 // column.appendChild(image);
                 row.append(`
         			<div class='column'>
-        				<img src=` + url + ` class='hover-shadow cursor' onclick='openModal();currentSlide(` + i + `)'>
+        				<img src=` + thumb + ` class='hover-shadow cursor' onclick='openModal();currentSlide(` + i + `)'>
         			</div>
     			`);
                 modal.append(`
