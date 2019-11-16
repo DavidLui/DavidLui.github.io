@@ -270,7 +270,10 @@ iframe {
 .column-about {
   float: left;
   padding: 10px;
-  height: 75vh;
+}
+
+.column-about p {
+	padding: 36px;
 }
 
 .column-about img {
@@ -289,7 +292,7 @@ iframe {
 .right {
   width: 64%;
   padding: 50px 0 0px;
-  font-size: x-large;	
+  font-size: x-large;
 }
 
 @media screen and (max-width: 600px) {
