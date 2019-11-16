@@ -7,10 +7,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/ico/favicon-16x16.png">
-    <link rel="manifest" href="assets/ico/manifest.json">
-    <link rel="mask-icon" href="assets/ico/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
-    <meta name="msapplication-config" content="assets/ico/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
     <title>Blissfully So</title>
@@ -19,7 +16,6 @@
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="assets/plugins/lightbox/css/lightbox.min.css">
     <link rel="stylesheet" href="assets/plugins/flickity/flickity.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- CSS Global -->
     <link rel="stylesheet" href="assets/css/theme.min.css">
@@ -109,22 +105,14 @@
         <!-- JAVASCRIPT
 	================================================== -->
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
         <!-- JS Global -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-        <!-- JS Plugins -->
-        <script src="assets/plugins/parallax/parallax.min.js"></script>
-        <script src="assets/plugins/isotope/lib/imagesloaded.pkgd.min.js"></script>
-        <script src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
-        <script src="assets/plugins/flickity/flickity.pkgd.min.js"></script>
-        <script src="assets/plugins/lightbox/js/lightbox.min.js"></script>
-        <script src="assets/plugins/reservation/reservation.js"></script>
-        <script src="assets/plugins/alerts/alerts.js"></script>
+        <!-- <script src="./js/jquery-3.4.1.min.js"></script> -->
 
         <script type="text/javascript">
         	const intro = 'https://drive.google.com/uc?export=view&id=';
@@ -237,6 +225,22 @@
                 	plusSlides(1);
                 }
             });
+        </script>
+
+        <script type="text/javascript">
+			var folder = "imgs/";
+
+			$.ajax({
+			    url : folder,
+			    success: function (data) {
+			        $(data).find("a").attr("href", function (i, val) {
+			            if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+			                $("body").append( "<img src='"+ folder + val +"'>" );
+			            } 
+			        });
+			    }
+			});
+
         </script>
 </body>
 
