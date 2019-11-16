@@ -115,38 +115,38 @@
         <!-- <script src="./js/jquery-3.4.1.min.js"></script> -->
 
         <script type="text/javascript">
-        	const intro = 'https://drive.google.com/uc?export=view&id=';
-        	const urlList = [
-        		'1FrgDA-MndXcS-WUn8xIjk8DPW-xUsYUE',
-        		'1FvCOV_2gevP81f5YTkvD93OIquD8fi9z',
-        		'1XzA1ZCOq4oOy7u5tsNGpkCV2U-s4ySwJ',
-        		'1Qca3PKy35weWV2ZnEaP_CZt-RRBC5dA0',
-        		'1i6PsUqv3Ep0jUY5VjZEkAB12wWvGN0P9',
-        		'1G9KcU5Lb2uk7zs4Nlc5POsLYHlp2xVxU',
-        		'14pmkcnXLREDkTr0zsZDBJ6FPJkIlGpPi',
-        		'1InuQ9bBMh5YP5i7IPgrUg2tBl5jMLYdA',
-        		'10XvYB0E7PN2nCpH8qSLpg0OKTSbcqVbU',
-        		'1Z8ZaBnPTyew3M-jhvmvG-ukdp7ql9op5',
-        		'1_KlR0o6gEV7tSP39EPbL66sFacr7JxcC',
-        		'17NfupDRmPnnWN417Gd_IN5MALI7EFc87',
-        		'1YPfRRk_6QBdKVVvcZULNuBBbZeRCI7-K',
-        		'1fr_LCcmSOkAbVb3TEPTQ66yFjTvo8nym',
-        		'1AEjODVTp09B5-Ii_GJhsWzy000CQnB20',
-        		'1NA6oomAql6BYGKQiMCRqphNebmI7fUkY',
-        		'1Z5onMGiB13y1AR592j72uXTfhaf_jhc5',
-        		'1iuCUeawA7YYYM6AERuqYg714QtKMv-YV',
-        		'153ha9VSBP146R3lZXT78aH1O4NixMobQ',
-        		'1CQ8kzgfhIKYreg-ZOR8wNC_wQbP9JmzQ',
-        		'1aVq68rDNPxaPA9kk5Fk5KzIgTIKk6iMM',
-        		'1EZKO3iGrTpSFPkDHiMAEc7ZNx324Pcd7',
-        		'1X2LZTmKxk8VEvtqi9lYU3d7m76YS-Ulf'
-        	];
+        	const intro = './imgs';
+        	// const urlList = [
+        	// 	'1FrgDA-MndXcS-WUn8xIjk8DPW-xUsYUE',
+        	// 	'1FvCOV_2gevP81f5YTkvD93OIquD8fi9z',
+        	// 	'1XzA1ZCOq4oOy7u5tsNGpkCV2U-s4ySwJ',
+        	// 	'1Qca3PKy35weWV2ZnEaP_CZt-RRBC5dA0',
+        	// 	'1i6PsUqv3Ep0jUY5VjZEkAB12wWvGN0P9',
+        	// 	'1G9KcU5Lb2uk7zs4Nlc5POsLYHlp2xVxU',
+        	// 	'14pmkcnXLREDkTr0zsZDBJ6FPJkIlGpPi',
+        	// 	'1InuQ9bBMh5YP5i7IPgrUg2tBl5jMLYdA',
+        	// 	'10XvYB0E7PN2nCpH8qSLpg0OKTSbcqVbU',
+        	// 	'1Z8ZaBnPTyew3M-jhvmvG-ukdp7ql9op5',
+        	// 	'1_KlR0o6gEV7tSP39EPbL66sFacr7JxcC',
+        	// 	'17NfupDRmPnnWN417Gd_IN5MALI7EFc87',
+        	// 	'1YPfRRk_6QBdKVVvcZULNuBBbZeRCI7-K',
+        	// 	'1fr_LCcmSOkAbVb3TEPTQ66yFjTvo8nym',
+        	// 	'1AEjODVTp09B5-Ii_GJhsWzy000CQnB20',
+        	// 	'1NA6oomAql6BYGKQiMCRqphNebmI7fUkY',
+        	// 	'1Z5onMGiB13y1AR592j72uXTfhaf_jhc5',
+        	// 	'1iuCUeawA7YYYM6AERuqYg714QtKMv-YV',
+        	// 	'153ha9VSBP146R3lZXT78aH1O4NixMobQ',
+        	// 	'1CQ8kzgfhIKYreg-ZOR8wNC_wQbP9JmzQ',
+        	// 	'1aVq68rDNPxaPA9kk5Fk5KzIgTIKk6iMM',
+        	// 	'1EZKO3iGrTpSFPkDHiMAEc7ZNx324Pcd7',
+        	// 	'1X2LZTmKxk8VEvtqi9lYU3d7m76YS-Ulf'
+        	// ];
 
         	const row = document.getElementsByClassName('row')[0];
         	const modal = document.getElementsByClassName('modal-imgs')[0];
 
-        	urlList.forEach(function(url, index) {
-        		url = intro + url;
+        	for (var i = 1; i < 41; i++) {
+        		url = `${intro}/${i}.jpg`;
         		var column = document.createElement("div");
         		column.className = 'column';
 
@@ -167,8 +167,7 @@
         		modalImage.src = url;
         		mySlides.append(modalImage);
         		modal.append(mySlides);
-        	});
-
+	        }
         </script>
         <script>
             function openModal() {
@@ -226,7 +225,7 @@
                 }
             });
         </script>
-
+<!-- 
         <script type="text/javascript">
 			var folder = "imgs/";
 
@@ -238,10 +237,13 @@
 			                $("body").append( "<img src='"+ folder + val +"'>" );
 			            } 
 			        });
+			    },
+			    error: function (data) {
+			    	console.log('err')
 			    }
 			});
 
-        </script>
+        </script> -->
 </body>
 
 </html>
