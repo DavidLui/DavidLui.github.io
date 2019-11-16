@@ -60,12 +60,6 @@
     <section class="section section_welcome" id="welcome" data-parallax="scroll" data-image-src="assets/img/1.jpg">
 
         <!-- Content -->
-        <div class="section_welcome__main">
-            <div class="container">
-
-            </div>
-            <!-- / .container -->
-        </div>
 
         <div class="row"></div>
 
@@ -143,7 +137,7 @@
         	// ];
 
         	const row = $('.row');
-        	const modal = document.getElementsByClassName('modal-imgs')[0];
+        	const modal = $('.modal-imgs');
 
         	for (var i = 1; i < 41; i++) {
         		url = `${intro}/${i}.jpg`;
@@ -167,13 +161,11 @@
         				<img src=` + url + ` class='hover-shadow cursor' onclick='openModal();currentSlide(` + i + `)'>
         			</div>
     			`);
-
-        		var mySlides = document.createElement("div");
-        		mySlides.className = 'mySlides';
-        		var modalImage = document.createElement("img");
-        		modalImage.src = url;
-        		mySlides.append(modalImage);
-        		modal.append(mySlides);
+        		modal.append(`
+        			<div class='mySlides'>
+        				<img src=` + url + `>
+        			</div>
+    			`);
 	        }
         </script>
         <script>
