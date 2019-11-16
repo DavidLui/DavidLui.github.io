@@ -4,7 +4,7 @@
 }
 
 .logo_header img {
-	height: 265px;
+	height: 250px;
 	max-width: 100%;
 }
 
@@ -58,7 +58,7 @@
 }
 
 #navbarNavAltMarkup {
-	font-size: 18px;
+	font-size: 10px;
 	font-family: 'Nunito', 'Raleway', sans-serif;
     text-transform: uppercase;
     width: 100%;
