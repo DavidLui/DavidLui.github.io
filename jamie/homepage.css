@@ -118,12 +118,6 @@ body {
   padding-top: 20px;
 }
 
-.left {
-  left: 0;
-  background-color: #111;
-  object-fit: cover;
-}
-
 .right {
   right: 0;
 }
@@ -271,4 +265,43 @@ iframe {
 	width: 99.1vw;
 	height: 2480px;
 	border: none;
+}
+
+.column-about {
+  float: left;
+  padding: 10px;
+  height: 75vh;
+}
+
+.column-about img {
+	vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-style: none;
+}
+
+.left {
+  width: 36%;
+  padding: 50px 37px 0px;
+}
+
+.right {
+  width: 64%;
+  padding: 50px 0 0px;
+  font-size: x-large;	
+}
+
+@media screen and (max-width: 600px) {
+  .column-about {
+    width: 100%;
+  }
+}
+
+/* Clear floats after the columns */
+.row-about:after {
+  content: "";
+  width: 100vw;
+  display: table;
+  clear: both;
 }
