@@ -142,24 +142,31 @@
         	// 	'1X2LZTmKxk8VEvtqi9lYU3d7m76YS-Ulf'
         	// ];
 
-        	const row = document.getElementsByClassName('row')[0];
+        	const row = $('.row');
         	const modal = document.getElementsByClassName('modal-imgs')[0];
 
         	for (var i = 1; i < 41; i++) {
         		url = `${intro}/${i}.jpg`;
-        		var column = document.createElement("div");
-        		column.className = 'column';
+        		// var column = document.createElement("div");
+        		// column.className = 'column';
 
-        		var image = document.createElement("img");
-        		image.src = url;
-        		image.onclick = function() {
-        			openModal();
-        			currentSlide(i + 1);
-        		}
+        		// var image = document.createElement("img");
+        		// image.src = url;
+        		// (function (i) {
+	        	// 	image.onclick = function() {
+	        	// 		openModal();
+	        	// 		var slideNum = i;
+	        	// 		currentSlide(slideNum);
+	        	// 	}
+        		// })(i);
 
-        		image.className = 'hover-shadow cursor';
-        		column.appendChild(image);
-        		row.appendChild(column);
+        		// image.className = 'hover-shadow cursor';
+        		// column.appendChild(image);
+        		row.append(`
+        			<div class='column'>
+        				<img src=` + url + ` class='hover-shadow cursor' onclick='openModal();currentSlide(` + i + `)'>
+        			</div>
+    			`);
 
         		var mySlides = document.createElement("div");
         		mySlides.className = 'mySlides';
@@ -218,10 +225,10 @@
                     closeModal();
                 }
                 if (e.keyCode === 39) {
-                	plusSlides(-1);
+                	plusSlides(1);
                 }
                 if (e.keyCode === 37) {
-                	plusSlides(1);
+                	plusSlides(-1);
                 }
             });
         </script>
