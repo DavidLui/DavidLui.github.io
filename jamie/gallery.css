@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-.row > .column {
+.row > .column-gallery {
   padding: 8px 8px;
 }
 
@@ -14,13 +14,15 @@
 }
 
 .row {
-  padding: 50px;
+  padding: 10px;
   width: 100%;
   place-content: center;
   text-align: center;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
-.column {
+.column-gallery {
   float: left;
 }
 
@@ -119,8 +121,8 @@ img {
 
 .row img {
   object-fit: cover;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 
 .mySlides {
