@@ -77,6 +77,14 @@
 	color: #dce2e2 !important;
 }
 
+.navbar a.active {
+	font-weight: bold;
+}
+
+.navbar a:hover {
+	font-weight: bold;
+}
+
 .navbar-brand {
 	font-size: 30px;
     font-weight: bolder;
@@ -303,7 +311,7 @@ figure.effect-sarah {
 
 iframe {
 	width: 99.1vw;
-	height: 2440px;
+	height: 2400px;
 	border: none;
 }
 
@@ -367,4 +375,10 @@ iframe {
 .about {
 	place-content: center;
 	display: flex;
+}
+
+.gar {
+	font-family: 'EB Garamond';
+	font-size: 24px;
+	color: #7993b2
 }

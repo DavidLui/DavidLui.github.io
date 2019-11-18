@@ -2,53 +2,46 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="apple-touch-icon" sizes="180x180" href="./imgs/logos/blissIcon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./imgs/logos/blissIcon_32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./imgs/logos/blissIcon_16.png">
-	<link rel="manifest" href="assets/ico/manifest.json">
-	<link rel="mask-icon" href="assets/ico/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href="assets/ico/favicon.ico">
-	<meta name="msapplication-config" content="assets/ico/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="./imgs/logos/blissIcon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imgs/logos/blissIcon_32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./imgs/logos/blissIcon_16.png">
+    <meta name="theme-color" content="#ffffff">
 
-	<title>Blissfully So</title>
+    <title>Blissfully So</title>
 
     <!-- CSS Global -->
+    <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="gallery.css">
-	<link rel="stylesheet" href="homepage.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Nunito:300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class='logo_header'>
+        <img id='header_img' src="./imgs/logos/logo.png">
+    </div>
 
-	<div class='logo_header'>
-		<img id='header_img'
-			src="./imgs/logos/logo.png">
-	</div>
-
-	<!-- NAVBAR
+    <!-- NAVBAR
 	================================================== -->
-	<!-- Navbar: Collapse -->
-	<nav class="navbar navbar-expand-lg navbar-light">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			<div class="navbar-nav">
-				<a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-				<a class="nav-item nav-link" href="gallery.html">Gallery</a>
-				<a class="nav-item nav-link" href="about.html">About</a>
-				<!-- <a class="nav-item nav-link" href="testimonials.html">Testimonials</a> -->
-				<a class="nav-item nav-link" href="contact.html">Contact</a>
-			</div>
+    <!-- Navbar: Collapse -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link active" href="gallery.html">Gallery <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="about.html">About</a>
+                <!-- <a class="nav-item nav-link" href="testimonials.html">Testimonials</a> -->
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+            </div>
 
-		</div>
-	</nav>
+        </div>
+    </nav>
 
     <section class="section section_welcome" id="welcome" data-parallax="scroll">
         <div class="row"></div>
@@ -66,19 +59,18 @@
             </div>
         </div>
 
-
         <!-- FOOTER
 	================================================== -->
         <footer class="section section_footer">
             <div class="footcontainer">
                 <div class="icons">
-                    <a href="" class="social-icon w-inline-block">
+                    <a href="https://www.facebook.com/blissfullyso/" target='_blank'>
                         <img src="https://assets-global.website-files.com/5babb9f91ab233724e53ce0b/5babb9f91ab233460253ce65_font-awesome_4-7-0_facebook_100_0_278bd5_none.png"
-                            width="25" alt="">
+                            width="25" alt="fb">
                     </a>
-                    <a href="" class="social-icon w-inline-block">
+                    <a href="https://www.instagram.com/blissfullyso.events" target='_blank'>
                         <img src="https://assets-global.website-files.com/5babb9f91ab233724e53ce0b/5babb9f91ab233817a53ce66_font-awesome_4-7-0_instagram_100_0_278bd5_none.png"
-                            width="25" alt="">
+                            width="25" alt="insta">
                     </a>
                 </div>
                 <h5>NJ . NY // 917.830.7788</h5>
@@ -87,17 +79,10 @@
                 <h8>www.arielma.com</h8>
             </div>
         </footer>
-
         <!-- JAVASCRIPT
 	================================================== -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
 
         <!-- JS Global -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -105,53 +90,25 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-        <!-- <script src="./js/jquery-3.4.1.min.js"></script> -->
 
         <script type="text/javascript">
             const path = './imgs';
-            // const urlList = [
-            // 	'1FrgDA-MndXcS-WUn8xIjk8DPW-xUsYUE',
-            // 	'1FvCOV_2gevP81f5YTkvD93OIquD8fi9z',
-            // 	'1XzA1ZCOq4oOy7u5tsNGpkCV2U-s4ySwJ',
-            // 	'1Qca3PKy35weWV2ZnEaP_CZt-RRBC5dA0',
-            // 	'1i6PsUqv3Ep0jUY5VjZEkAB12wWvGN0P9',
-            // 	'1G9KcU5Lb2uk7zs4Nlc5POsLYHlp2xVxU',
-            // 	'14pmkcnXLREDkTr0zsZDBJ6FPJkIlGpPi',
-            // 	'1InuQ9bBMh5YP5i7IPgrUg2tBl5jMLYdA',
-            // 	'10XvYB0E7PN2nCpH8qSLpg0OKTSbcqVbU',
-            // 	'1Z8ZaBnPTyew3M-jhvmvG-ukdp7ql9op5',
-            // 	'1_KlR0o6gEV7tSP39EPbL66sFacr7JxcC',
-            // 	'17NfupDRmPnnWN417Gd_IN5MALI7EFc87',
-            // 	'1YPfRRk_6QBdKVVvcZULNuBBbZeRCI7-K',
-            // 	'1fr_LCcmSOkAbVb3TEPTQ66yFjTvo8nym',
-            // 	'1AEjODVTp09B5-Ii_GJhsWzy000CQnB20',
-            // 	'1NA6oomAql6BYGKQiMCRqphNebmI7fUkY',
-            // 	'1Z5onMGiB13y1AR592j72uXTfhaf_jhc5',
-            // 	'1iuCUeawA7YYYM6AERuqYg714QtKMv-YV',
-            // 	'153ha9VSBP146R3lZXT78aH1O4NixMobQ',
-            // 	'1CQ8kzgfhIKYreg-ZOR8wNC_wQbP9JmzQ',
-            // 	'1aVq68rDNPxaPA9kk5Fk5KzIgTIKk6iMM',
-            // 	'1EZKO3iGrTpSFPkDHiMAEc7ZNx324Pcd7',
-            // 	'1X2LZTmKxk8VEvtqi9lYU3d7m76YS-Ulf'
-            // ];
 
             const row = $('.row');
             const modal = $('.modal-imgs');
             const modalContent = $('.modal-content');
 
-            var priscilla = [1,2,3,4,5,16,23,24,25];
+            var priscilla = [1, 2, 3, 4, 5, 16, 23, 24, 25];
             var cynthia = [6];
-            var brit = [7,8,35,36,37,38];
-            var heart = [9,10,11,12,13,14,32,33,34];
+            var brit = [7, 8, 35, 36, 37, 38];
+            var heart = [9, 10, 11, 12, 13, 14, 32, 33, 34];
             var kruks = [15];
             var sasha = [17, 18];
-            var dp = [20,21,22];
-            var lc = [26,27,28,29,30];
+            var dp = [20, 21, 22];
+            var lc = [26, 27, 28, 29, 30];
             var echo = [31];
-            var even = [39,40];
+            var even = [39, 40];
             for (var i = 1; i < 41; i++) {
-
-                
                 if (priscilla.includes(i)) {
                     photographer = 'Priscilla Choi Photography';
                 }
