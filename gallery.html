@@ -200,7 +200,10 @@
                     slides[i].style.display = "none";
                 }
                 var img = slides[slideIndex - 1].getElementsByTagName('img')[0];
-                img.setAttribute('src', img.getAttribute('data-src'));
+	    if (!img.getAttribute('src')) {
+
+		img.setAttribute('src', img.getAttribute('data-src'));
+	    }
                 slides[slideIndex - 1].style.display = "block";
                 captionText.innerText = slides[slideIndex - 1].id;
 
