@@ -206,12 +206,17 @@
 
                 if (slides[slideIndex - 2]) {
                     var s2 = slides[slideIndex - 2].getElementsByTagName('img')[0];
-                    s2.setAttribute('src', s2.getAttribute('data-src'));
+			
+		    if (!s2.getAttribute('src')) {
+			s2.setAttribute('src', s2.getAttribute('data-src'));
+		    }
                 }
 
                 if (slides[slideIndex]) {
                     var s1 = slides[slideIndex].getElementsByTagName('img')[0];
-                    s1.setAttribute('src', s1.getAttribute('data-src'));
+		    if (!s1.getAttribute('src')) {
+                    	s1.setAttribute('src', s1.getAttribute('data-src'));
+		    }
                 }
             }
         </script>
