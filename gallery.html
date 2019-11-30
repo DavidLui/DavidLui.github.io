@@ -208,18 +208,26 @@
                     slides[i].style.display = "none";
                 }
                 var img = slides[slideIndex - 1].getElementsByTagName('img')[0];
-                img.setAttribute('src', img.getAttribute('data-src'));
+	    if (!img.getAttribute('src')) {
+
+		img.setAttribute('src', img.getAttribute('data-src'));
+	    }
                 slides[slideIndex - 1].style.display = "block";
                 captionText.innerText = slides[slideIndex - 1].id;
 
                 if (slides[slideIndex - 2]) {
                     var s2 = slides[slideIndex - 2].getElementsByTagName('img')[0];
-                    s2.setAttribute('src', s2.getAttribute('data-src'));
+			
+		    if (!s2.getAttribute('src')) {
+			s2.setAttribute('src', s2.getAttribute('data-src'));
+		    }
                 }
 
                 if (slides[slideIndex]) {
                     var s1 = slides[slideIndex].getElementsByTagName('img')[0];
-                    s1.setAttribute('src', s1.getAttribute('data-src'));
+		    if (!s1.getAttribute('src')) {
+                    	s1.setAttribute('src', s1.getAttribute('data-src'));
+		    }
                 }
             }
         </script>
