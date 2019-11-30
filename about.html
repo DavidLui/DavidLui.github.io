@@ -25,10 +25,9 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Nunito:300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond" />
+	<script src="./scripts.js"></script>
 </head>
-
 <body>
-
 	<div class='logo_header'>
 		<img id='header_img' src="./imgs/logos/logo.png">
 	</div>
@@ -37,8 +36,8 @@
 	================================================== -->
 	<!-- Navbar: Collapse -->
 	<nav class="navbar navbar-expand-lg navbar-light">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" 
+			aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -46,10 +45,17 @@
 				<a class="nav-item nav-link" href="index.html">Home</a>
 				<a class="nav-item nav-link" href="gallery.html">Gallery</a>
 				<a class="nav-item nav-link active" href="about.html">About <span class="sr-only">(current)</span></a>
-				<!-- <a class="nav-item nav-link" href="testimonials.html">Testimonials</a> -->
 				<a class="nav-item nav-link" href="contact.html">Contact</a>
 			</div>
-
+		</div>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="sidenav-items">
+				<a class="nav-item nav-link" href="index.html">Home</a>
+				<a class="nav-item nav-link" href="gallery.html">Gallery</a>
+				<a class="nav-item nav-link active" href="about.html">About <span class="sr-only">(current)</span></a>
+				<a class="nav-item nav-link" href="contact.html">Contact</a>
+			</div>
 		</div>
 	</nav>
 
