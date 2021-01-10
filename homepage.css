@@ -343,7 +343,6 @@ figure.effect-sarah:hover .credits {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 	text-align: center;
-	
 }
 
 figure.effect-sarah {
@@ -362,11 +361,12 @@ iframe {
 
 .column-about {
   float: left;
-  padding: 10px;
+  padding: 18px;
 }
 
 .column-about.right p {
 	padding: 20px;
+	border: dotted 4px lightgrey;
 }
 
 .credits {
@@ -379,19 +379,16 @@ iframe {
     object-fit: cover;
     border-style: none;
     width: 100%;
-    max-width: 200px;
+    max-width: 285px;
     height: auto;
 }
 
 .left {
 	height: 100%;
-    padding: 25px 30px 25px;
 }
 
 .right {
-    width: 40%;
-	font-size: small;
-    max-width: 375px;
+    max-width: 519px;
 }
 
 @media screen and (max-width: 800px) {
