@@ -6,8 +6,9 @@ import Gallery from './paths/Gallery';
 import Home from './paths/Home';
 import Logo from './imgs/logos/logo.png';
 import * as React from 'react';
-import Wedding from './paths/Wedding';
 import { HeaderLayout } from './HeaderLayout';
+import db from './firebase';
+import Wedding from './paths/Wedding';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
 
       <BrowserRouter>
         <Switch>
-          <Route path={"/wedding"} render={Wedding} />
+          <Route path={`/wedding`} component={Wedding} />
           <HeaderLayout path={`/gallery`} component={Gallery} />
           <HeaderLayout path={`/about`} component={About} />
           <HeaderLayout path={`/contact`} component={Contact} />

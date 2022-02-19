@@ -1,0 +1,21 @@
+
+.engagement {
+    width: 50%;
+}
+
+.form {
+    text-align: center;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;  
+    place-self: center;
+}
+
+.formContainer {
+    display: flex;
+}
+
+.error {
+    color: red;
+}

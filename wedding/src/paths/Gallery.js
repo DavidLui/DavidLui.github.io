@@ -52,68 +52,6 @@ const Gallery = () => {
         };
     }, [isOpen]);
 
-    React.useEffect(() => {
-        var priscilla = [1, 2, 3, 4, 5, 16, 23, 24, 25];
-        var cynthia = [6];
-        var brit = [7, 8, 35, 36, 37, 38];
-        var heart = [9, 10, 11, 12, 13, 14, 32, 33, 34];
-        var kruks = [15];
-        var sasha = [17, 18];
-        var dp = [20, 21, 22];
-        var lc = [26, 27, 28, 29, 30];
-        var echo = [31];
-        var even = [39, 40];
-        var eric = [41, 42, 43, 44];
-        var natotuke = [45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57];
-        var george = [58, 59, 60, 61, 62]
-        let photographer = '';
-
-        for (var i = 1; i < 64; i++) {
-            if (priscilla.includes(i)) {
-                photographer = 'Priscilla Choi Photography';
-            }
-            else if (cynthia.includes(i)) {
-                photographer = 'Cynthia Chung Photography';
-            }
-            else if (brit.includes(i)) {
-                photographer = 'Brittany Jean Photography';
-            }
-            else if (heart.includes(i)) {
-                photographer = 'Heartfelt Studios';
-            }
-            else if (kruks.includes(i)) {
-                photographer = 'The Kruks Photography';
-            }
-            else if (sasha.includes(i)) {
-                photographer = 'Sascha Reinking Photography';
-            }
-            else if (dp.includes(i)) {
-                photographer = 'Design & Photography: Priscilla Choi';
-            }
-            else if (lc.includes(i)) {
-                photographer = 'L.C. Allison Photography';
-            }
-            else if (echo.includes(i)) {
-                photographer = 'Echo Chen';
-            }
-            else if (even.includes(i)) {
-                photographer = 'Even Yu';
-            }
-            else if (eric.includes(i)) {
-                photographer = 'Eryc Perez de Tagle';
-            }
-            else if (natotuke.includes(i)) {
-                photographer = 'Weddings by Nato Tuke';
-            }
-            else if (george.includes(i)) {
-                photographer = 'George Street Photography';
-            }
-            else {
-                photographer = '';
-            }
-        }
-    }, []);
-
     const openModal = (index) => {
         setIsOpen(true);
         setCurrentIndex(index);
