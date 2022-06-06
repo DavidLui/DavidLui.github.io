@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.2e41cbe3.chunk.css",
-    "main.js": "/static/js/main.05911082.chunk.js",
-    "main.js.map": "/static/js/main.05911082.chunk.js.map",
+    "main.css": "/static/css/main.a867320e.chunk.css",
+    "main.js": "/static/js/main.dd8c4f7b.chunk.js",
+    "main.js.map": "/static/js/main.dd8c4f7b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ae76cbc6.js",
     "runtime-main.js.map": "/static/js/runtime-main.ae76cbc6.js.map",
-    "static/js/2.57e7117a.chunk.js": "/static/js/2.57e7117a.chunk.js",
-    "static/js/2.57e7117a.chunk.js.map": "/static/js/2.57e7117a.chunk.js.map",
+    "static/js/2.edaf038b.chunk.js": "/static/js/2.edaf038b.chunk.js",
+    "static/js/2.edaf038b.chunk.js.map": "/static/js/2.edaf038b.chunk.js.map",
     "static/js/3.640d7fe3.chunk.js": "/static/js/3.640d7fe3.chunk.js",
     "static/js/3.640d7fe3.chunk.js.map": "/static/js/3.640d7fe3.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.2e41cbe3.chunk.css.map": "/static/css/main.2e41cbe3.chunk.css.map",
-    "static/js/2.57e7117a.chunk.js.LICENSE.txt": "/static/js/2.57e7117a.chunk.js.LICENSE.txt",
+    "static/css/main.a867320e.chunk.css.map": "/static/css/main.a867320e.chunk.css.map",
+    "static/js/2.edaf038b.chunk.js.LICENSE.txt": "/static/js/2.edaf038b.chunk.js.LICENSE.txt",
     "static/media/19.jpg": "/static/media/19.4d1b5fee.jpg",
     "static/media/19_tn.jpg": "/static/media/19_tn.a933924e.jpg",
     "static/media/63.jpg": "/static/media/63.21b4ae69.jpg",
@@ -85,18 +85,18 @@
     "static/media/Weddings by Nato Tuke_8.jpg": "/static/media/Weddings by Nato Tuke_8.a6605338.jpg",
     "static/media/Weddings by Nato Tuke_9.jpg": "/static/media/Weddings by Nato Tuke_9.c6d9e778.jpg",
     "static/media/App.css": "/static/media/avenir.99603051.woff2",
+    "static/media/Wedding.css": "/static/media/will.881dc3c3.png",
     "static/media/design.5f78945e.jpg": "/static/media/design.5f78945e.jpg",
     "static/media/engagement.a183d9bf.jpg": "/static/media/engagement.a183d9bf.jpg",
     "static/media/florals.4d8a4c6f.jpg": "/static/media/florals.4d8a4c6f.jpg",
     "static/media/logo.809829c1.png": "/static/media/logo.809829c1.png",
-    "static/media/Wedding.css": "/static/media/main_pic.709e3c80.jpg",
     "static/media/planning.c14d70e5.jpg": "/static/media/planning.c14d70e5.jpg",
     "static/media/success.e7f878a2.jpg": "/static/media/success.e7f878a2.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.ae76cbc6.js",
-    "static/js/2.57e7117a.chunk.js",
-    "static/css/main.2e41cbe3.chunk.css",
-    "static/js/main.05911082.chunk.js"
+    "static/js/2.edaf038b.chunk.js",
+    "static/css/main.a867320e.chunk.css",
+    "static/js/main.dd8c4f7b.chunk.js"
   ]
 }
