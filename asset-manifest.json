@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.89087612.chunk.css",
-    "main.js": "/static/js/main.19640752.chunk.js",
+    "main.css": "/static/css/main.351f5a76.chunk.css",
+    "main.js": "/static/js/main.1fe3d8e0.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.ae76cbc6.js",
-    "static/js/2.edaf038b.chunk.js": "/static/js/2.edaf038b.chunk.js",
+    "static/js/2.25d3d92e.chunk.js": "/static/js/2.25d3d92e.chunk.js",
     "static/js/3.640d7fe3.chunk.js": "/static/js/3.640d7fe3.chunk.js",
     "index.html": "/index.html",
-    "static/js/2.edaf038b.chunk.js.LICENSE.txt": "/static/js/2.edaf038b.chunk.js.LICENSE.txt",
+    "static/js/2.25d3d92e.chunk.js.LICENSE.txt": "/static/js/2.25d3d92e.chunk.js.LICENSE.txt",
     "static/media/19.jpg": "/static/media/19.4d1b5fee.jpg",
     "static/media/19_tn.jpg": "/static/media/19_tn.a933924e.jpg",
     "static/media/63.jpg": "/static/media/63.21b4ae69.jpg",
@@ -82,17 +82,15 @@
     "static/media/Wedding.css": "/static/media/will.881dc3c3.png",
     "static/media/App.css": "/static/media/avenir.99603051.woff2",
     "static/media/design.5f78945e.jpg": "/static/media/design.5f78945e.jpg",
-    "static/media/engagement.a183d9bf.jpg": "/static/media/engagement.a183d9bf.jpg",
     "static/media/florals.4d8a4c6f.jpg": "/static/media/florals.4d8a4c6f.jpg",
     "static/media/justine.4a4ba52d.png": "/static/media/justine.4a4ba52d.png",
     "static/media/logo.809829c1.png": "/static/media/logo.809829c1.png",
-    "static/media/planning.c14d70e5.jpg": "/static/media/planning.c14d70e5.jpg",
-    "static/media/success.e7f878a2.jpg": "/static/media/success.e7f878a2.jpg"
+    "static/media/planning.c14d70e5.jpg": "/static/media/planning.c14d70e5.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.ae76cbc6.js",
-    "static/js/2.edaf038b.chunk.js",
-    "static/css/main.89087612.chunk.css",
-    "static/js/main.19640752.chunk.js"
+    "static/js/2.25d3d92e.chunk.js",
+    "static/css/main.351f5a76.chunk.css",
+    "static/js/main.1fe3d8e0.chunk.js"
   ]
 }
