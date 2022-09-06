@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.9655ec48.chunk.css",
-    "main.js": "/static/js/main.4aab3d33.chunk.js",
+    "main.css": "/static/css/main.33e7878d.chunk.css",
+    "main.js": "/static/js/main.fd5ece98.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.ae174b9d.js",
     "static/css/2.ebfc7b5a.chunk.css": "/static/css/2.ebfc7b5a.chunk.css",
-    "static/js/2.bffd8706.chunk.js": "/static/js/2.bffd8706.chunk.js",
+    "static/js/2.2c5a871f.chunk.js": "/static/js/2.2c5a871f.chunk.js",
     "static/js/3.91e2866b.chunk.js": "/static/js/3.91e2866b.chunk.js",
     "index.html": "/index.html",
-    "static/js/2.bffd8706.chunk.js.LICENSE.txt": "/static/js/2.bffd8706.chunk.js.LICENSE.txt",
+    "static/js/2.2c5a871f.chunk.js.LICENSE.txt": "/static/js/2.2c5a871f.chunk.js.LICENSE.txt",
     "static/media/Wedding.css": "/static/media/will.881dc3c3.png",
     "static/media/19.jpg": "/static/media/19.4d1b5fee.jpg",
     "static/media/19_tn.jpg": "/static/media/19_tn.a933924e.jpg",
@@ -91,8 +91,8 @@
   "entrypoints": [
     "static/js/runtime-main.ae174b9d.js",
     "static/css/2.ebfc7b5a.chunk.css",
-    "static/js/2.bffd8706.chunk.js",
-    "static/css/main.9655ec48.chunk.css",
-    "static/js/main.4aab3d33.chunk.js"
+    "static/js/2.2c5a871f.chunk.js",
+    "static/css/main.33e7878d.chunk.css",
+    "static/js/main.fd5ece98.chunk.js"
   ]
 }
