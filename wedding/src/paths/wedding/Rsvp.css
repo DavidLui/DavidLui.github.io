@@ -1,0 +1,72 @@
+
+.engagement {
+    width: 50%;
+}
+
+.form {
+    text-align: center;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;  
+    place-self: center;
+    min-height: 350px;
+    height: fit-content;
+}
+
+.formContainer {
+    font-family: 'Avenir';
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}
+
+.innerForm {
+    margin: auto;
+    margin-top: 30px;
+}
+
+.error {
+    color: red;
+}
+
+.rsvp-input {
+    border: 0;
+    outline: none;
+    text-align: center;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.addlButton {
+    font-size: 15px;
+    border: none;
+}
+
+.highlighted {
+    border: 1px solid;
+}
+
+.subButton {
+    font-size: 20px;
+    border: 0;
+}
+
+.rightMarginAuto {
+    /* margin-right: auto; */
+}
+
+.checkboxContainer {
+    display: flex;
+    flex-flow: column;
+}
+
+.margin5 {
+    margin-right: 5px;
+}
+
+.suggestion-box {
+    width: 180px
+}

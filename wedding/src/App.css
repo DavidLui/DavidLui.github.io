@@ -367,8 +367,7 @@ iframe {
 }
 
 .column-about.right p {
-	padding: 20px;
-	border: dotted 4px lightgrey;
+	padding: 0 14px 0 14px;
 }
 
 .credits {
@@ -429,4 +428,9 @@ iframe {
 
 .sidenav-items {
 	margin-top: 30%;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: local('Avenir'), url(./fonts/avenir.woff2) format('woff');
 }

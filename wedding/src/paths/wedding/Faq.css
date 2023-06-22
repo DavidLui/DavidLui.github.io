@@ -1,0 +1,10 @@
+.faq-container {
+    align-items: center;
+    place-content: center;
+    display: flex;
+    min-height: fit-content;
+}
+
+.bold {
+    font-weight: bold;
+}

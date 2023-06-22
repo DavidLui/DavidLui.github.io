@@ -1,0 +1,336 @@
+.text {
+    font-size: 125px;
+    text-align: center;
+    font-family: 'Arabilla Signature';
+    position: relative;
+}
+
+.text2 {
+    font-size: 125px;
+    text-align: center;
+    font-family: 'Arabilla Signature';
+    position: relative;
+}
+
+.jd {
+    top: 25%;
+}
+
+.wedding-navbar {
+    position: sticky;
+    box-shadow: 0 0 3px rgb(0 0 0 / 35%);
+    color: black !important;
+    height: 48px;
+    padding: 8px 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    top: 0px;
+    z-index: 100;
+}
+
+.wedding-toggle {
+    height: 36px;
+}
+
+.wedding-header {
+    position: absolute;
+    font-family: 'Arabilla Signature';
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.offset {
+    padding-top: 48px;
+    margin-top: -48px;
+}
+
+.big {
+    font-size: 55px;
+}
+
+.med {
+    font-size: 25px;
+}
+
+.mapDates {
+    font-size: 17px;
+    margin-top: -5px;
+}
+
+.subText {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wrapCenter {
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.linky {
+    color: inherit;
+    text-decoration: none !important;
+}
+
+.card {
+    position: relative;
+    width: 278px;
+    background: #ebebeb;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    box-shadow: 3px 3px 3px #e8e8e8;
+    font-size: 17px;
+}
+
+.smallText {
+    font-size: 14px;
+}
+
+.smallTextFormat {
+    width: 50vw;
+    display: inline-block;
+}
+
+.noEvents {
+    user-select: none;
+    pointer-events: none;
+}
+
+.map {
+    background: white;
+    display: flex;
+}
+
+.spacedEvenly {
+    justify-content: space-evenly;
+    text-align: -webkit-center;
+}
+
+.textSection {
+    margin: auto;
+    text-align: center;
+    font-family: 'Avenir';
+    font-size: 25px;
+    padding: 30px;
+}
+
+.wedText {
+    color: #d6d6d6fa;
+    font-size: 75px;
+}
+
+.negMargin {
+    margin-top: -20px;
+}
+
+.wedding-sec-small {
+    min-height: 50vh;
+}
+
+.greyBack {
+    background-image: linear-gradient(to bottom right, #F8F8F8, #F0F0F0);
+}
+
+.wedding-section,
+.wedding-section>iframe {
+    min-height: fit-content;
+    height: calc(100vh - 48px);
+}
+
+.wedding-section>iframe {
+    width: 50%;
+    border: 0;
+}
+
+.fit-content {
+    min-height: fit-content;
+}
+
+.rsvp {
+    min-height: calc(100vh - 48px);
+    height: fit-content;
+    padding-bottom: 70px;
+}
+
+@media screen and (max-width: 750px) {
+    .wedding-header {
+        display: none;
+    }
+
+    .map {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .wedding-section {
+        height: 100%;
+    }
+
+    .wedding-section>iframe {
+        width: 100%;
+        height: 500px;
+    }
+
+    .mapText {
+        height: 50vh;
+        display: flex;
+    }
+
+    .marginAuto {
+        margin: auto;
+    }
+
+    .rsvp {
+        min-height: 750px;
+    }
+
+    .wedText {
+        font-size: 37px;
+    }
+
+    .subText {
+        font-size: 15px;
+    }
+
+    .negMargin {
+        margin-top: 0px;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.portrait-img {
+    height: 100px;
+    width: 100px;
+}
+
+.height-500 {
+    height: 500px;
+}
+
+.max {
+    background-image: url('./../../imgs/wedding/mac.png');
+}
+
+.sam {
+    background-image: url('./../../imgs/wedding/samwang.png');
+}
+
+.ben {
+    background-image: url('./../../imgs/wedding/bem.png');
+}
+
+.evan {
+    background-image: url('./../../imgs/wedding/evan.png');
+}
+
+.tianyu {
+    background-image: url('./../../imgs/wedding/tianyu.png');
+}
+
+.will {
+    background-image: url('./../../imgs/wedding/will.png');
+}
+
+.christine {
+    background-image: url('./../../imgs/wedding/christine.png');
+}
+
+.justine {
+    background-image: url('./../../imgs/wedding/justine.png');
+}
+
+.ada {
+    background-image: url('./../../imgs/wedding/ada.png');
+}
+
+.amanda {
+    background-image: url('./../../imgs/wedding/amanda2.jpg');
+}
+
+.jen {
+    background-image: url('./../../imgs/wedding/jen.png');
+}
+
+.monique {
+    background-image: url('./../../imgs/wedding/monique2.jpg');
+}
+
+.partyPic>div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.partyPic>div>div {
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.slideshow {
+    height: 586px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.slide-container {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.slide-container-button {
+    background: none;
+}
+
+.slide-notes {
+    font-size: 10px;
+    font-family: 'Avenir';
+}
+
+.slide1 {
+    background-image: url('./../../imgs/wedding-slide/1.jpg');
+}
+
+.slide2 {
+    background-image: url('./../../imgs/wedding-slide/2.jpg');
+}
+
+.slide3 {
+    background-image: url('./../../imgs/wedding-slide/3.jpg');
+}
+
+.slide4 {
+    background-image: url('./../../imgs/wedding-slide/4.jpg');
+}
+
+.slide5 {
+    background-image: url('./../../imgs/wedding-slide/5.jpg');
+}
+
+.slide6 {
+    background-image: url('./../../imgs/wedding-slide/6.jpg');
+}
+
+.slide7 {
+    background-image: url('./../../imgs/wedding-slide/7.jpg');
+}
+
+.slide8 {
+    background-image: url('./../../imgs/wedding-slide/8.jpg');
+}
+
+.slide9 {
+    background-image: url('./../../imgs/wedding-slide/9.jpg');
+}
+
+.slide10 {
+    background-image: url('./../../imgs/wedding-slide/10.jpg');
+}
+
+.slide11 {
+    background-image: url('./../../imgs/wedding-slide/11.jpg');
+}
