@@ -8,7 +8,7 @@ const Home = () => {
         <div className="grid-container">
             <div className="column">
                 <figure className="effect-sarah">
-                    <img src={Planning} />
+                    <img alt="planning" src={Planning} />
                     <figcaption>
                         <div>
                             <h2><span>PLANNING</span></h2>
@@ -22,7 +22,7 @@ const Home = () => {
             </div>
             <div className="column">
                 <figure className="effect-sarah">
-                    <img src={Design} />
+                    <img alt="design" src={Design} />
                     <figcaption>
                         <div>
                             <h2><span>DESIGN</span></h2>
@@ -38,7 +38,7 @@ const Home = () => {
             </div>
             <div className="column">
                 <figure className="effect-sarah">
-                    <img src={Florals} />
+                    <img alt="florals" src={Florals} />
                     <figcaption>
                         <div>
                             <h2><span>FLORALS</span></h2>

@@ -17,6 +17,7 @@ export const HeaderLayout = ({ component: Component, ...rest }) => {
     return (
         <Route {...rest} render={(props) => (
             <>
+                <div className="headerFloral">We are currently not accepting ceremony or reception floral inquiries.</div>
                 <div className='logo_header'>
                     <a href='/'>
                         <img id='header_img' alt='logo' src={Logo} />
