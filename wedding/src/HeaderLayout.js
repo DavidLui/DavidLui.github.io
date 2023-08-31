@@ -17,35 +17,45 @@ export const HeaderLayout = ({ component: Component, ...rest }) => {
     return (
         <Route {...rest} render={(props) => (
             <>
-                <div className="headerFloral">We are currently not accepting ceremony or reception floral inquiries.</div>
-                <div className='logo_header'>
-                    <a href='/'>
-                        <img id='header_img' alt='logo' src={Logo} />
-                    </a>
-                </div>
-                <nav className="navbar navbar-expand-lg navbar-light">
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" onClick={onToggle} >
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div onClick={closeToggle} className="navbar-nav">
-                            <NavLink className="nav-item nav-link" to='/' exact={true}>Home</NavLink>
-                            <NavLink className="nav-item nav-link" to='/gallery'>Gallery</NavLink>
-                            <NavLink className="nav-item nav-link" to='/about'>About</NavLink>
-                            <NavLink className="nav-item nav-link" to='/contact'>Contact</NavLink>
-                        </div>
-                    </div>
-                    {isNavOpen &&
-                        <div id="mySidenav" onClick={closeToggle} className="sidenav">
-                            <div onClick={closeToggle} className="sidenav-items">
-                                <NavLink className="nav-item nav-link" to='/' exact={true}>Home</NavLink>
+                <div className={'sticky'}>
+                    <div className="headerFloral">We are currently not accepting ceremony or reception floral inquiries.</div>
+                    <div className='logo_header'>
+                        <a href='/'>
+                            <img id='header_img' alt='logo' src={Logo} />
+                        </a>
+                        <nav className="navbar navbar-expand-lg navbar-light">
+                            <button className="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" onClick={onToggle} >
+                                <span className="navbar-toggler-icon"></span>
+                            </button>
+                            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div onClick={closeToggle} className="navbar-nav">
+                                    {/* <NavLink className="nav-item nav-link" to='/' exact={true}>Home</NavLink>
                                 <NavLink className="nav-item nav-link" to='/gallery'>Gallery</NavLink>
                                 <NavLink className="nav-item nav-link" to='/about'>About</NavLink>
-                                <NavLink className="nav-item nav-link" to='/contact'>Contact</NavLink>
+                                <NavLink className="nav-item nav-link" to='/contact'>Contact</NavLink> */}
+                                    <a className="nav-item nav-link" href='#home' exact={'true'}>Home</a>
+                                    <a className="nav-item nav-link" href='#gallery'>Gallery</a>
+                                    <a className="nav-item nav-link" href='#about'>About</a>
+                                    <a className="nav-item nav-link" href='#contact'>Contact</a>
+                                </div>
                             </div>
-                        </div>
-                    }
-                </nav>
+                            {isNavOpen &&
+                                <div id="mySidenav" onClick={closeToggle} className="sidenav">
+                                    <div onClick={closeToggle} className="sidenav-items">
+                                        {/* <NavLink className="nav-item nav-link" to='/' exact={true}>Home</NavLink>
+                                    <NavLink className="nav-item nav-link" to='/gallery'>Gallery</NavLink>
+                                    <NavLink className="nav-item nav-link" to='/about'>About</NavLink>
+                                    <NavLink className="nav-item nav-link" to='/contact'>Contact</NavLink> */}
+                                        <a className="nav-item nav-link" href='#home' exact={'true'}>Home</a>
+                                        <a className="nav-item nav-link" href='#gallery'>Gallery</a>
+                                        <a className="nav-item nav-link" href='#about'>About</a>
+                                        <a className="nav-item nav-link" href='#contact'>Contact</a>
+                                    </div>
+                                </div>
+                            }
+                        </nav>
+                    </div>
+                </div>
                 <Component {...props} />
                 <footer className="section section_footer">
                     <div className="footcontainer">
@@ -61,8 +71,8 @@ export const HeaderLayout = ({ component: Component, ...rest }) => {
                         </div>
                         <h5>NJ . NY // 917.830.7788</h5>
                         <h5>BLISSFULLYSOEVENTS@GMAIL.COM</h5>
-                        <h8>DESIGN/BRANDING: ARIEL MA</h8>
-                        <h8>www.arielma.com</h8>
+                        <h6>DESIGN/BRANDING: ARIEL MA</h6>
+                        <h6>www.arielma.com</h6>
                     </div>
                 </footer>
             </>
